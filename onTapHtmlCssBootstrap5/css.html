@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+    <style>
+      .fontChu{
+          text-decoration: dotted underline;
+          font-family: 'Courier New', Courier, monospace';
+      }
+      .border{
+          border-style: outset;
+          border-width: 2px;
+          border-color: rebeccapurple;
+          border-radius: 5px;
+          padding: 10px;
+          border-top: 3px solid yellow;
+      }
+      body{
+          /* background: linear-gradient(to left,blue,purple);
+          background-repeat: no-repeat;
+          background-attachment: fixed; */
+
+          /* background-image: url(capy.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover; */
+      }
+      #box1{
+          width: 200px;
+          height: 200px;
+          border-style: solid;
+          background-color: rgb(214, 152, 162);
+          /* position: relative;
+          top:50px;
+          left: 400px; */
+
+
+          /* position: relative; vị trí so với static */
+
+          /* vị trí không thay đổi khi kéo chuột */
+          /* position: fixed;
+          top:10px */
+
+          position: sticky;
+          top:6px;
+      }
+      #box2{
+          width: 200px;
+          height: 200px;
+          border-style: solid;
+          background-color: rgb(255, 192, 226);
+          margin-top: 10px;
+          padding: 10px;
+
+          /* position: absolute;
+          top: 10px; */
+           /* vị trí so với cha */
+
+      }
+      .shadow{
+        text-shadow: 5px 0px 5px grey, -5px -5px 5px red ;
+        /* 1. dương phải, âm trái
+        2.dưới tên
+        3.độ mờ khoảng 5px là đáng kể
+        */
+        box-shadow: 10px 10px 5px palevioletred;
+      }
+      #box3{
+        width: 200px;
+        height: 200px;
+        border-style: solid;
+        background-color: rgb(214, 152, 162);
+        /* transform: translateX(40px);
+        transform: translateY(50px); */
+
+        /* transform:translate(40px,50px); */
+
+        transform: rotateX(180deg);
+        /* phóng */
+        /* transform: scale(2); */
+
+        transform: skewX(20deg);
+        font-size: 50px;
+
+        /* matrix */
+
+      }
+      button{
+       font-size: 40px;
+      }
+      button:hover{
+        background-color: red;
+      }
+      button:active{
+        background-color: green;
+      }
+      /* li:nth-child(3){
+        color:blueviolet;
+      } */
+    
+      /* li:nth-child(odd){
+        color:blueviolet;
+      } */
+
+      /* li:nth-child(even){
+        color:blueviolet;
+      } */
+
+      /* 3n,3n+1 */
+      @media all and (max-width:768px){
+        .responsive{
+            color: red;
+        }
+      }
+
+      @media all and (max-width:480px){
+        .responsive{
+            color: palegreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--  -->
+    <!-- <div class="fontChu border">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+    </div> -->
+
+    <!-- <div class="position">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+      <div class="marginPadding">
+        <div id="box1">box1
+            <div id="box2">box2</div>
+        </div>
+        
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam
+        sed vitae earum. Voluptates esse temporibus, officiis rerum aliquid
+        laborum neque culpa. Provident velit facilis deleniti aliquam doloremque
+        debitis quia.
+      </p>
+    </div> -->
+
+    <!-- <div class="shadow">
+        <h1>Vân ở đây</h1>
+    </div> -->
+
+    <!-- <div class="transform">
+      <div class="" id="box3">BOX3</div>
+    </div> -->
+  
+    <!-- <div class="pseudoclass">
+        <button >Click me</button>
+        <ul>
+            <li>Đây là 1</li>
+            <li>Đây là 2</li>
+            <li>Đây là 3</li>
+            <li>Đây là 4</li>
+            <li>Đây là 5</li>
+            <li>Đây là 6</li>
+            <li>Đây là 7</li>
+            <li>Đây là 8</li>
+            <li>Đây là 9</li>
+            <li>Đây là 10</li>
+        </ul>
+    </div> -->
+
+    <div class="responsive">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis eaque quisquam pariatur, dolorem esse error porro dolorum repellat voluptas accusamus labore quas vitae autem adipisci, odio exercitationem natus. Veritatis?</h1>
+    </div>
+</body>
+</html>
